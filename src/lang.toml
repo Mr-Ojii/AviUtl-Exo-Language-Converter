@@ -1,0 +1,931 @@
+# このファイルはUTF-8で書くこと
+
+[description]
+language = ["ja", "en"]
+
+# exeditと各オブジェクトの基本情報は翻訳する必要はない
+[[maps]]
+name = ["", ""]
+keys = []
+
+# 描画・再生
+[[maps]]
+name = ["標準再生", "Standard playback"]
+keys = [
+    ["音量", "Volume"],
+    ["左右", "Left-Right"],
+]
+
+[[maps]]
+name = ["標準描画", "Standard drawing"]
+keys = [
+    ["X", "X"],
+    ["Y", "Y"],
+    ["Z", "Z"],
+    ["拡大率", "Zoom%"],
+    ["透明度", "Clearness"],
+    ["縦横比", "rAspect"],
+    ["回転", "Rotation"],
+    ["X軸回転", "X-Spin"],
+    ["Y軸回転", "Y-Spin"],
+    ["Z軸回転", "Z-Spin"],
+    ["中心X", "Center X"],
+    ["中心Y", "Center Y"],
+    ["中心Z", "Center Z"],
+    ["blend", "blend"],
+    ["裏面を表示しない", "Do not show backside"],
+]
+
+[[maps]]
+name = ["拡張描画", "Advanced drawing"]
+keys = [
+    ["X", "X"],
+    ["Y", "Y"],
+    ["Z", "Z"],
+    ["拡大率", "Zoom%"],
+    ["透明度", "Clearness"],
+    ["縦横比", "rAspect"],
+    ["回転", "Rotation"],
+    ["X軸回転", "X-Spin"],
+    ["Y軸回転", "Y-Spin"],
+    ["Z軸回転", "Z-Spin"],
+    ["中心X", "Center X"],
+    ["中心Y", "Center Y"],
+    ["中心Z", "Center Z"],
+    ["blend", "blend"],
+    ["裏面を表示しない", "Do not show backside"],
+]
+
+[[maps]]
+name = ["パーティクル出力", "Particle output"]
+keys = [
+    ["出力頻度", "fOutput"],
+    ["出力速度", "vOutput"],
+    ["加速度", "dv/dt"],
+    ["出力方向", "Output>>"],
+    ["拡散角度", "<Diffuse"],
+    ["透過率", "Transmittance"],
+    ["透過速度", "vTransmit"],
+    ["拡大率", "Zoom%"],
+    ["拡大速度", "vSpread"],
+    ["回転角", "<Rotate"],
+    ["回転速度", "vRotation"],
+    ["重力", "Gravity"],
+    ["生存時間", "tSurvival"],
+    ["出力方向の基準を移動方向にする", "Output direction based on movement direction"],
+    ["移動範囲の座標からランダムに出力", "Random output from movement range"],
+    ["3Dランダム回転", "3D random rotation"],
+    ["終了点で全て消えるように調節する", "Adjusted to fully disappear at end point"],
+]
+
+# 制御系
+[[maps]]
+name = ["時間制御", "Time control"]
+keys = [
+    ["位置", "Position"],
+    ["繰り返し", "Repeat"],
+    ["コマ落ち", "Decimation"],
+    ["フレーム番号指定", "Specified frame number"],
+]
+
+[[maps]]
+name = ["グループ制御", "Group control"]
+keys = [
+    ["X", "X"],
+    ["Y", "Y"],
+    ["Z", "Z"],
+    ["拡大率", "Zoom%"],
+    ["X軸回転", "X-Spin"],
+    ["Y軸回転", "Y-Spin"],
+    ["Z軸回転", "Z-Spin"],
+    ["上位グループ制御の影響を受ける", "Affected by the upper group control"],
+    ["同じグループのオブジェクトを対象にする", "Apply to objects in the same group"],
+]
+
+[[maps]]
+name = ["カメラ制御", "Camera control"]
+keys = [
+    ["X", "X"],
+    ["Y", "Y"],
+    ["Z", "Z"],
+    ["目標X", "Target X"],
+    ["目標Y", "Target Y"],
+    ["目標Z", "Target Z"],
+    ["目標ﾚｲﾔ", "Target ly"],
+    ["傾き", "Slope"],
+    ["深度ぼけ", "Depth blur"],
+    ["視野角", "<View"],
+    ["Zバッファ/シャドウマップを有効にする", "Enable Z-buffer / shadow map"],
+    ["range", "range"],
+]
+
+# カメラ系
+[[maps]]
+name = ["カメラ効果", "Camera effect"]
+keys = [
+    ["track0", "track0"],
+    ["track1", "track1"],
+    ["track2", "track2"],
+    ["track3", "track3"],
+    ["check0", "check0"],
+    ["type", "type"],
+    ["filter", "filter"],
+    ["name", "name"],
+    ["param", "param"],
+]
+
+[[maps]]
+name = ["シャドー(カメラ制御)", "Shadow (camera control)"]
+keys = [
+    ["光源X", "Light X"],
+    ["光源Y", "Light Y"],
+    ["光源Z", "Light Z"],
+    ["濃さ", "Thickness"],
+    ["精度", "Accuracy"],
+]
+
+[[maps]]
+name = ["スクリプト(カメラ制御)", "Script (camera control)"]
+keys = [
+    ["text", "text"],
+]
+
+# 音声エフェクト
+[[maps]]
+name = ["音量フェード", "Volume fade"]
+keys = [
+    ["イン", "In"],
+    ["アウト", "Out"],
+]
+
+[[maps]]
+name = ["音声ディレイ", "Audio delay"]
+keys = [
+    ["強さ", "Strength"],
+    ["遅延(ms)", "Delay (ms)"],
+]
+
+[[maps]]
+name = ["モノラル化", "Monaural"]
+keys = [
+    ["比率", "Ratio"],
+]
+
+# エフェクトオブジェクト
+[[maps]]
+name = ["シーンチェンジ", "Scene change"]
+keys = [
+    ["調整", "Adjustment"],
+    ["track1", "track1"],
+    ["反転", "Reversal"],
+    ["check0", "check0"],
+    ["type", "type"],
+    ["filter", "filter"],
+    ["name", "name"],
+    ["param", "param"],
+]
+
+[[maps]]
+name = ["部分フィルタ", "Sub-filter"]
+keys = [
+    ["X", "X"],
+    ["Y", "Y"],
+    ["回転", "Rotation"],
+    ["サイズ", "Size"],
+    ["縦横比", "rAspect"],
+    ["ぼかし", "Blur"],
+    ["マスクの反転", "Invert mask"],
+    ["type", "type"],
+    ["name", "name"],
+]
+
+[[maps]]
+name = ["ノイズ除去フィルタ", "Denoise"]
+keys = [
+    ["強さ", "Strength"],
+    ["範囲", "Range"],
+    ["しきい値", "Threshold"]
+]
+
+[[maps]]
+name = ["ぼかしフィルタ", "Sharpening"]
+keys = [
+    ["強さ", "Strength"],
+    ["範囲", "Range"],
+    ["下限値", "LowLimit"],
+    ["上限値", "UpLimit"],
+]
+
+[[maps]]
+name = ["クリッピング＆リサイズ", "Clipping and Resize"]
+keys = [
+    ["上", "Top"],
+    ["下", "Bottom"],
+    ["左", "Left"],
+    ["右", "Right"],
+    ["_exdata", "_exdata"]
+]
+
+[[maps]]
+name = ["縁塗りつぶし", "Fill border"]
+keys = [
+    ["上", "Top"],
+    ["下", "Bottom"],
+    ["左", "Left"],
+    ["右", "Right"],
+    ["中央に配置", "Place at center"],
+    ["縁の色で塗る", "with Edge color"],
+]
+
+[[maps]]
+name = ["拡張色調補正", "Advanced color correction"]
+keys = [
+    ["Y(offs)", "Y(offs)"],
+    ["Y(gain)", "Y(gain)"],
+    ["Cb(offs)", "Cb(offs)"],
+    ["Cb(gain)", "Cb(gain)"],
+    ["Cr(offs)", "Cr(offs)"],
+    ["Cr(gain)", "Cr(gain)"],
+    ["R(offs)", "R(offs)"],
+    ["R(gain)", "R(gain)"],
+    ["R(gamm)", "R(gamm)"],
+    ["G(offs)", "G(offs)"],
+    ["G(gain)", "G(gain)"],
+    ["G(gamm)", "G(gamm)"],
+    ["B(offs)", "B(offs)"],
+    ["B(gain)", "B(gain)"],
+    ["B(gamm)", "B(gamm)"],
+    ["RGBの同期", "Sync RGB"],
+    ["TV -> PC スケール補正", "TV → PC conversion"],
+    ["PC -> TV スケール補正", "PC → TV conversion"],
+]
+
+# オブジェクト
+[[maps]]
+name = ["動画ファイル", "Video file"]
+keys = [
+    ["再生位置", "Playback position"],
+    ["再生速度", "vPlay"],
+    ["ループ再生", "Loop playback"],
+    ["アルファチャンネルを読み込む", "Import alpha channel"],
+    ["file", "file"]
+]
+
+[[maps]]
+name = ["画像ファイル", "Image file"]
+keys = [
+    ["file", "file"]
+]
+
+[[maps]]
+name = ["音声ファイル", "Audio file"]
+keys = [
+    ["再生位置", "Playback position"],
+    ["再生速度", "vPlay"],
+    ["ループ再生", "Loop playback"],
+    ["動画ファイルと連携", "Sync with video files"],
+    ["file", "file"],
+]
+
+[[maps]]
+name = ["テキスト", "Text"]
+keys = [
+    ["サイズ", "Size"],
+    ["表示速度", "vDisplay"],
+    ["文字毎に個別オブジェクト", "1char1obj"],
+    ["移動座標上に表示する", "Show on motion coordinate"],
+    ["自動スクロール", "Automatic scrolling"],
+    ["B", "B"],
+    ["I", "I"],
+    ["type", "type"],
+    ["autoadjust", "autoadjust"],
+    ["soft", "soft"],
+    ["monospace", "monospace"],
+    ["align", "align"],
+    ["spacing_x", "spacing_x"],
+    ["spacing_y", "spacing_y"],
+    ["precision", "precision"],
+    ["color", "color"],
+    ["color2", "color2"],
+    ["font", "font"],
+    ["text", "text"],
+]
+
+[[maps]]
+name = ["図形", "Graphic"]
+keys = [
+    ["サイズ", "Size"],
+    ["縦横比", "rAspect"],
+    ["ライン幅", "Line width"],
+    ["type", "type"],
+    ["color", "color"],
+    ["name", "name"],
+]
+
+[[maps]]
+name = ["フレームバッファ", "Frame buffer"]
+keys = [
+    ["フレームバッファをクリア", "Clear frame buffer"],
+]
+
+[[maps]]
+name = ["音声波形表示", "Audio waveform display"]
+keys = [
+    ["横幅", "Width"],
+    ["高さ", "Height"],
+    ["音量", "Volume"],
+    ["再生位置", "Playback position"],
+    ["編集全体の音声を元にする", "Restore original sound"],
+    ["file", "file"],
+    ["type", "type"],
+    ["res_w", "res_w"],
+    ["res_h", "res_h"],
+    ["pad_w", "pad_w"],
+    ["pad_h", "pad_h"],
+    ["color", "color"],
+    ["sample_n", "sample_n"],
+    ["mirror", "mirror"],
+]
+
+[[maps]]
+name = ["シーン", "Scene"]
+keys = [
+    ["再生位置", "Playback position"],
+    ["再生速度", "vPlay"],
+    ["ループ再生", "Loop playback"],
+    ["scene", "scene"],
+]
+
+[[maps]]
+name = ["シーン(音声)", "Scene (audio)"]
+keys = [
+    ["再生位置", "Playback position"],
+    ["再生速度", "vPlay"],
+    ["ループ再生", "Loop playback"],
+    ["シーンと連携", "Sync with the scene"],
+    ["scene", "scene"],
+]
+
+[[maps]]
+name = ["直前オブジェクト", "Previous object"]
+keys = []
+
+[[maps]]
+name = ["カスタムオブジェクト", "Custom object"]
+keys = [
+    ["track0", "track0"],
+    ["track1", "track1"],
+    ["track2", "track2"],
+    ["track3", "track3"],
+    ["check0", "check0"],
+    ["type", "type"],
+    ["filter", "filter"],
+    ["name", "name"],
+    ["param", "param"],
+]
+
+# 映像エフェクト
+[[maps]]
+name = ["色調補正", "Color compensation"]
+keys = [
+    ["明るさ", "Lightness"],
+    ["ｺﾝﾄﾗｽﾄ", "Contrast"],
+    ["色相", "Hue"],
+    ["輝度", "Luminance"],
+    ["彩度", "Chroma"],
+    ["飽和する", "Saturated"],
+]
+
+[[maps]]
+name = ["クリッピング", "Clipping"]
+keys = [
+    ["上", "Top"],
+    ["下", "Bottom"],
+    ["左", "Left"],
+    ["右", "Right"],
+    ["中心の位置を変更", "Change the center position"],
+]
+
+[[maps]]
+name = ["ぼかし", "Blur"]
+keys = [
+    ["範囲", "Range"],
+    ["縦横比", "rAspect"],
+    ["光の強さ", "Light Stre"],
+    ["サイズ固定", "Fixed Size"],
+]
+
+[[maps]]
+name = ["境界ぼかし", "Boundary blurring"]
+keys = [
+    ["範囲", "Range"],
+    ["縦横比", "rAspect"],
+    ["透明度の境界をぼかす", "Boundary blur of transparency"],
+]
+
+[[maps]]
+name = ["モザイク", "Mosaic"]
+keys = [
+    ["サイズ", "Size"],
+    ["タイル風", "Tile style"],
+]
+
+[[maps]]
+name = ["発光", "Emission"]
+keys = [
+    ["強さ", "Strength"],
+    ["拡散", "Diffusion"],
+    ["しきい値", "Threshold"],
+    ["拡散速度", "vDiffuse"],
+    ["サイズ固定", "Fixed Size"],
+    ["color", "color"],
+    ["no_color", "no_color"],
+]
+
+[[maps]]
+name = ["閃光", "Flash"]
+keys = [
+    ["強さ", "Strength"],
+    ["X", "X"],
+    ["Y", "Y"],
+    ["サイズ固定", "Fixed Size"],
+    ["color", "color"],
+    ["no_color", "no_color"],
+    ["mode", "mode"],
+]
+
+[[maps]]
+name = ["拡散光", "Diffusion light"]
+keys = [
+    ["強さ", "Strength"],
+    ["拡散", "Diffusion"],
+    ["サイズ固定", "Fixed Size"],
+]
+
+[[maps]]
+name = ["グロー", "Glow"]
+keys = [
+    ["強さ", "Strength"],
+    ["拡散", "Diffusion"],
+    ["しきい値", "Threshold"],
+    ["ぼかし", "Blur"],
+    ["光成分のみ", "Light only"],
+    ["color", "color"],
+    ["no_color", "no_color"],
+    ["type", "type"]
+]
+
+[[maps]]
+name = ["クロマキー", "Chroma Key"]
+keys = [
+    ["色相範囲", "~Hue"],
+    ["彩度範囲", "~Chroma"],
+    ["境界補正", "dEdge"],
+    ["色彩補正", "Chromatic correction"],
+    ["透過補正", "Transmission correction"],
+    ["color_yc", "color_yc"],
+    ["status", "status"],
+]
+
+[[maps]]
+name = ["カラーキー", "Color Key"]
+keys = [
+    ["輝度範囲", "~Luminance"],
+    ["色差範囲", "~DColor"],
+    ["境界補正", "dEdge"],
+    ["color_yc", "color_yc"],
+    ["status", "status"],
+]
+
+[[maps]]
+name = ["ルミナンスキー", "Luminance Key"]
+keys = [
+    ["基準輝度", "RefLuminance"],
+    ["ぼかし", "Blur"],
+    ["type", "type"],
+]
+
+[[maps]]
+name = ["ライト", "Light"]
+keys = [
+    ["強さ", "Strength"],
+    ["拡散", "Diffusion"],
+    ["比率", "Ratio"],
+    ["逆光", "Backlight"],
+    ["color", "color"],
+]
+
+[[maps]]
+name = ["シャドー", "Shadow"]
+keys = [
+    ["X", "X"],
+    ["Y", "Y"],
+    ["濃さ", "Thickness"],
+    ["拡散", "Diffusion"],
+    ["影を別オブジェクトで描画", "Draw shadow as separate object"],
+    ["color", "color"],
+    ["file", "file"],
+]
+
+[[maps]]
+name = ["縁取り", "Add border"]
+keys = [
+    ["サイズ", "Size"],
+    ["ぼかし", "Blur"],
+    ["color", "color"],
+    ["file", "file"],
+]
+
+[[maps]]
+name = ["凸エッジ", "Bevel"]
+keys = [
+    ["幅", "Width"],
+    ["高さ", "Height"],
+    ["角度", "Angle"],
+]
+
+[[maps]]
+name = ["エッジ抽出", "Edge extraction"]
+keys = [
+    ["強さ", "Strength"],
+    ["しきい値", "Threshold"],
+    ["輝度エッジを抽出", "Extract luminance edge"],
+    ["透明度エッジを抽出", "Extract transparency edge"],
+    ["color", "color"],
+    ["no_color", "no_color"],
+]
+
+[[maps]]
+name = ["シャープ", "Sharpen"]
+keys = [
+    ["強さ", "Strength"],
+    ["範囲", "Range"],
+]
+
+[[maps]]
+name = ["フェード", "Fade"]
+keys = [
+    ["イン", "In"],
+    ["アウト", "Out"],
+]
+
+[[maps]]
+name = ["ワイプ", "Wipe"]
+keys = [
+    ["イン", "In"],
+    ["アウト", "Out"],
+    ["ぼかし", "Blur"],
+    ["反転(イン)", "Flip (in)"],
+    ["反転(アウト)", "Flip (out)"],
+    ["type", "type"],
+    ["name", "name"],
+]
+
+[[maps]]
+name = ["マスク", "Mask"]
+keys = [
+    ["X", "X"],
+    ["Y", "Y"],
+    ["回転", "Rotation"],
+    ["サイズ", "Size"],
+    ["縦横比", "rAspect"],
+    ["ぼかし", "Blur"],
+    ["マスクの反転", "Invert mask"],
+    ["元のサイズに合わせる", "Match with original size"],
+    ["type", "type"],
+    ["name", "name"],
+    ["mode", "mode"],
+]
+
+[[maps]]
+name = ["斜めクリッピング", "Diagonal clipping"]
+keys = [
+    ["中心X", "Center X"],
+    ["中心Y", "Center Y"],
+    ["角度", "Angle"],
+    ["ぼかし", "Blur"],
+    ["幅", "Width"],
+]
+
+[[maps]]
+name = ["放射ブラー", "Radial Blur"]
+keys = [
+    ["範囲", "Range"],
+    ["X", "X"],
+    ["Y", "Y"],
+    ["サイズ固定", "Fixed Size"],
+]
+
+[[maps]]
+name = ["方向ブラー", "Direction blur"]
+keys = [
+    ["範囲", "Range"],
+    ["角度", "Angle"],
+    ["サイズ固定", "Fixed Size"],
+]
+
+[[maps]]
+name = ["レンズブラー", "Lens blur"]
+keys = [
+    ["範囲", "Range"],
+    ["光の強さ", "Light Stre"],
+    ["サイズ固定", "Fixed Size"],
+]
+
+[[maps]]
+name = ["モーションブラー", "Motion blur"]
+keys = [
+    ["間隔", "Interval"],
+    ["分解能", "Resolution"],
+    ["残像", "Afterimage"],
+    ["オフスクリーン描画", "Off-screen drawing"],
+    ["出力時に分解能を上げる", "Increase resolution during export"],
+]
+
+[[maps]]
+name = ["座標", "Coordinate"]
+keys = [
+    ["X", "X"],
+    ["Y", "Y"],
+    ["Z", "Z"],
+]
+
+[[maps]]
+name = ["拡大率", "Zoom%"]
+keys = [
+    ["拡大率", "Zoom%"],
+    ["X", "X"],
+    ["Y", "Y"],
+]
+
+[[maps]]
+name = ["透明度", "Clearness"]
+keys = [
+    ["透明度", "Clearness"],
+]
+
+[[maps]]
+name = ["回転", "Rotation"]
+keys = [
+    ["X", "X"],
+    ["Y", "Y"],
+    ["Z", "Z"],
+]
+
+[[maps]]
+name = ["領域拡張", "Region expansion"]
+keys = [
+    ["上", "Top"],
+    ["下", "Bottom"],
+    ["左", "Left"],
+    ["右", "Right"],
+    ["塗りつぶし", "Fill"],
+]
+
+[[maps]]
+name = ["リサイズ", "Resize"]
+keys = [
+    ["拡大率", "Zoom%"],
+    ["X", "X"],
+    ["Y", "Y"],
+    ["補間なし", "No interpolation"],
+    ["ドット数でサイズ指定", "Specified size by the number of dots"],
+]
+
+[[maps]]
+name = ["ローテーション", "Locked Rotation"]
+keys = [
+    ["90度回転", "90 degree rotation"],
+]
+
+[[maps]]
+name = ["反転", "Reversal"]
+keys = [
+    ["上下反転", "Flip vertical"],
+    ["左右反転", "Flip horizontal"],
+    ["輝度反転", "Invert luminance"],
+    ["色相反転", "Hue inversion"],
+    ["透明度反転", "Transparency inversion"],
+]
+
+[[maps]]
+name = ["振動", "Vibration"]
+keys = [
+    ["X", "X"],
+    ["Y", "Y"],
+    ["Z", "Z"],
+    ["周期", "Period"],
+    ["ランダムに強さを変える", "Change the strength at random"],
+    ["複雑に振動", "Complex vibration"],
+]
+
+[[maps]]
+name = ["ミラー", "Mirror"]
+keys = [
+    ["透明度", "Clearness"],
+    ["減衰", "Attenuate"],
+    ["境目調整", "dEdge"],
+    ["中心の位置を変更", "Change the center position"],
+    ["type", "type"],
+]
+
+[[maps]]
+name = ["ラスター", "Raster"]
+keys = [
+    ["横幅", "Width"],
+    ["高さ", "Height"],
+    ["周期", "Period"],
+    ["縦ラスター", "Vertical raster"],
+    ["ランダム振幅", "Random amplitude"],
+]
+
+[[maps]]
+name = ["波紋", "Ripple"]
+keys = [
+    ["中心X", "Center X"],
+    ["中心Y", "Center Y"],
+    ["幅", "Width"],
+    ["高さ", "Height"],
+    ["速度", "Speed"],
+    ["num", "num"],
+    ["interval", "interval"],
+    ["add", "add"],
+]
+
+[[maps]]
+name = ["画像ループ", "Image tiling"]
+keys = [
+    ["横回数", "Hx#"],
+    ["縦回数", "Vy#"],
+    ["速度X", "Speed X"],
+    ["速度Y", "Speed Y"],
+    ["個別オブジェクト", "Individual objects"],
+]
+
+[[maps]]
+name = ["極座標変換", "Polar coordinate conversion"]
+keys = [
+    ["中心幅", "Center width"],
+    ["拡大率", "Zoom%"],
+    ["回転", "Rotation"],
+    ["渦巻", "Whirlpool"],
+]
+
+[[maps]]
+name = ["ディスプレイスメントマップ", "Displacement map"]
+keys = [
+    ["param0", "param0"],
+    ["param1", "param1"],
+    ["X", "X"],
+    ["Y", "Y"],
+    ["回転", "Rotation"],
+    ["サイズ", "Size"],
+    ["縦横比", "rAspect"],
+    ["ぼかし", "Blur"],
+    ["元のサイズに合わせる", "Match with original size"],
+    ["type", "type"],
+    ["name", "name"],
+    ["mode", "mode"],
+    ["calc", "calc"],
+]
+
+[[maps]]
+name = ["ノイズ", "Noise"]
+keys = [
+    ["強さ", "Strength"],
+    ["速度X", "Speed X"],
+    ["速度Y", "Speed Y"],
+    ["変化速度", "dy/dx"],
+    ["周期X", "Cycle X"],
+    ["周期Y", "Cycle Y"],
+    ["しきい値", "Threshold"],
+    ["type", "type"],
+    ["mode", "mode"],
+    ["seed", "seed"],
+]
+
+[[maps]]
+name = ["色ずれ", "Color shift"]
+keys = [
+    ["ずれ幅", "Gap width"],
+    ["角度", "Angle"],
+    ["強さ", "Strength"],
+    ["type", "type"],
+]
+
+[[maps]]
+name = ["単色化", "Monochromatic"]
+keys = [
+    ["強さ", "Strength"],
+    ["輝度を保持する", "Keep luminance"],
+    ["color", "color"],
+]
+
+[[maps]]
+name = ["グラデーション", "Gradient"]
+keys = [
+    ["強さ", "Strength"],
+    ["中心X", "Center X"],
+    ["中心Y", "Center Y"],
+    ["角度", "Angle"],
+    ["幅", "Width"],
+    ["blend", "blend"],
+    ["color", "color"],
+    ["no_color", "no_color"],
+    ["color2", "color2"],
+    ["no_color2", "no_color2"],
+    ["type", "type"],
+]
+
+[[maps]]
+name = ["拡張色設定", "Extended color setting"]
+keys = [
+    ["R", "R"],
+    ["G", "G"],
+    ["B", "B"],
+    ["RGB⇔HSV", "RGB⇔HSV"],
+]
+
+[[maps]]
+name = ["特定色域変換", "Specific color gamut conversion"]
+keys = [
+    ["色相範囲", "~Hue"],
+    ["彩度範囲", "~Chroma"],
+    ["境界補正", "dEdge"],
+    ["color_yc", "color_yc"],
+    ["status", "status"],
+    ["color_yc2", "color_yc2"],
+    ["status2", "status2"],
+]
+
+[[maps]]
+name = ["アニメーション効果", "Animation effect"]
+keys = [
+    ["track0", "track0"],
+    ["track1", "track1"],
+    ["track2", "track2"],
+    ["track3", "track3"],
+    ["check0", "check0"],
+    ["type", "type"],
+    ["filter", "filter"],
+    ["name", "name"],
+    ["param", "param"],
+]
+
+[[maps]]
+name = ["スクリプト制御", "Script control"]
+keys = [
+    ["text", "text"],
+]
+
+[[maps]]
+name = ["動画ファイル合成", "Video files synthesis"]
+keys = [
+    ["再生位置", "Playback position"],
+    ["再生速度", "vPlay"],
+    ["X", "X"],
+    ["Y", "Y"],
+    ["拡大率", "Zoom%"],
+    ["ループ再生", "Loop playback"],
+    ["動画ファイルの同期", "Synchronize with video files"],
+    ["ループ画像", "Loop image"],
+    ["file", "file"],
+    ["mode", "mode"],
+]
+
+[[maps]]
+name = ["画像ファイル合成", "Synthesis image file"]
+keys = [
+    ["X", "X"],
+    ["Y", "Y"],
+    ["拡大率", "Zoom%"],
+    ["ループ画像", "Loop image"],
+    ["mode", "mode"],
+    ["file", "file"],
+]
+
+[[maps]]
+name = ["インターレース解除", "De-interlacing"]
+keys = [
+    ["type", "type"],
+]
+
+[[maps]]
+name = ["カメラ制御オプション", "Camera control options"]
+keys = [
+    ["カメラの方を向く", "Face the camera"],
+    ["カメラの方を向く(縦横方向のみ)", "Face the camera (Hx and Vy only)"],
+    ["カメラの方を向く(横方向のみ)", "Face the camera (Hx only)"],
+    ["シャドーの対象から外す", "Exclude from shadow"],
+]
+
+[[maps]]
+name = ["オフスクリーン描画", "Off-screen drawing"]
+keys = []
+
+[[maps]]
+name = ["オブジェクト分割", "Object split"]
+keys = [
+    ["横分割数", "Hy div#"],
+    ["縦分割数", "Vx div#"],
+]

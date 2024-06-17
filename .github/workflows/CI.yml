@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - uses: actions/setup-go@v5
+      with:
+        go-version: '1.22'
+    - name: Build
+      run: |
+        cd ${{ github.workspace }}/src
+        GOOS=windows GOARCH=386 go build -ldflags="-s -w" -trimpath . .
+    - name: Move docs
+      run: |
+        cd ${{ github.workspace }}
+        mv Readme.md src
+        mv LICENSE.txt src
+    - name: Create Archive
+      run: |
+        cd ${{ github.workspace }}/src
+        zip exo-lc Readme.md LICENSE.txt ./*.exe ./*.toml
+    - name: Create a Release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        REVCOUNT=`git rev-list --count HEAD`
+        RELEASE_NAME=r${REVCOUNT}
+        TAG_NAME=r${REVCOUNT}
+        gh release create "${TAG_NAME}" ${{ github.workspace }}/src/*.zip -t "${RELEASE_NAME}"
